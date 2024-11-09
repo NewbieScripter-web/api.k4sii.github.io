@@ -14,7 +14,7 @@ licensed by k4sii
 
 
 local a = "This script is from K4-Hub."
-local b = "8ff103"
+local b = "8Gb471nh37Ghg9821"
 
 if lrm_load_script then
     lrm_load_script(b)
