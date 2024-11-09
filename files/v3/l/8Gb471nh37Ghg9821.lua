@@ -1,23 +1,2 @@
-local b = "8Gb471nh37Ghg9821-cache"
-local c = "https://k4sii.netlify.app/files/v3/l" .. b .. ".lua"
-
-
-if not is_from_loader then
-    
-    LocalPlayer:Kick("You must use the loader to run this script.")
-    return
-end
-
--- Intenta cargar el script desde la URL
-local success, script = pcall(function()
-    return game:HttpGet(c)
-end)
-
-
-if success then
-    
-    loadstring(c)()
-else
-
-    LocalPlayer:Kick("Failed to load the script.")
-end
+local b="8Gb471nh37Ghg9821-cache"local c="https://k4sii.netlify.app/files/v3/l"..b..".lua"if not is_from_loader then local player=game.Players.LocalPlayer if player then player:Kick("You must use the loader to run this script.")end return end local success,script=pcall(function() return game:HttpGet(c)end)if success then local loadSuccess,loadError=pcall(loadstring(script))if not loadSuccess then local player=game.Players.LocalPlayer if player then player:Kick("Failed to execute the script: "..loadError)end end else local player=game.Players.LocalPlayer if player then player:Kick("Failed to load the script.")end end
+--fixed
