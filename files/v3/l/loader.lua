@@ -18,7 +18,7 @@ licensed by k4sii
 local a = "This script is from K4-Hub."
 local b = "8Gb471nh37Ghg9821"
 
--- Cargar script si se encuentra lrm_load_script
+
 if lrm_load_script then
     lrm_load_script(b)
     while wait(1) do end
